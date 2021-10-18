@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'Vue Admin Template',
+  title: 'Rosebuds Axie Energy Tracker',
 
   /**
    * @type {boolean} true | false

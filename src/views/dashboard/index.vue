@@ -3,6 +3,7 @@
     <el-row :gutter="20">
        <el-col :span="12" :offset="6">
          <div class="grid-content bg-purple">
+          <h1> Rosebuds Axie Energy Tracker</h1>
           <h1> Round {{round}} </h1>
           <h3> ENERGY USED </h3>
          </div>
