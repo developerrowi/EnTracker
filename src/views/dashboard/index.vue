@@ -62,6 +62,9 @@ export default {
       if (keyCode == "a") {
         this.minusEnergy()
       } 
+      if (keyCode == "d") {
+        this.addEnergy()
+      } 
 		console.log(String.fromCharCode(e.keyCode));
 	});
   },
@@ -78,11 +81,20 @@ methods: {
 
   addEnergy() {
     this.restrictGreater10()
-    this.energy = this.energy + 1;
+    if (this.energy >= 9) {
+      this.energy = 10
+    } else {
+      this.energy = this.energy + 1 
+    }
   },
   minusEnergy() {
-    this.restrictLess0()
-    this.energy = this.energy - 1;
+    // this.restrictLess0()
+       if (this.energy <= 1) {
+      this.energy = 0
+    } else {
+      this.energy = this.energy - 1 
+    }
+
   },
   endTurn() {
     if (this.energy >= 9) {
