@@ -19,6 +19,13 @@
          <div class="grid-content bg-purple p-3">
           <el-button type="danger" icon="el-icon-share" size="mini" @click="resetBtn()">RESET </el-button>
          </div> 
+         <div class="grid-content bg-purple p-3">
+          <h4>Keymap Settings</h4>
+          <p>A = Minus Energy</p>
+          <p>D = Add Energy</p>
+          <p>Spacebar = End Turn</p>
+          <p>` = Reset Energy</p>
+         </div> 
         </el-col>
     </el-row>
     </div>
@@ -64,6 +71,12 @@ export default {
       } 
       if (keyCode == "d") {
         this.addEnergy()
+      }
+      if (keyCode == " ") {
+        this.endTurn()
+      } 
+      if (keyCode == "`") {
+        this.resetBtn()
       } 
 		console.log(String.fromCharCode(e.keyCode));
 	});
