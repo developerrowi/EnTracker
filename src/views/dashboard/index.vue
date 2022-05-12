@@ -1,14 +1,14 @@
 <template>
-  <div class="dashboard-container">
+  <div class="dashboard-container trykolang">
     <el-row :gutter="20">
        <el-col :span="12" :offset="6">
-         <div class="grid-content bg-purple">
+         <div class="grid-content bg-purple trykolang" >
           <h1> Rosebuds Axie Energy Tracker</h1>
-          <h1> Round {{round}} </h1>
+          <h1> Round {{round}} </h1> 
           <h3> ENERGY USED </h3>
          </div>
          <div class="grid-content bg-purple">
-        <h1> {{energy}} </h1> 
+        <h1 class="trykolang"> {{energy}} </h1> 
          </div>
          <div class="grid-content bg-purple p-3">
           <el-button type="danger" icon="el-icon-minus" circle @click="minusEnergy()"></el-button> 
@@ -189,5 +189,10 @@ methods: {
     font-size: 30px;
     line-height: 46px;
   }
+}
+
+.trykolang {
+  color: blue;
+  font-size: 30px;
 }
 </style>
